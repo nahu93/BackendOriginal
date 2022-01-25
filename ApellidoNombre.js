@@ -1,51 +1,58 @@
 class Usuario  {
     
-    constructor(nombre,apellido)
+    constructor(nombre,apellido,libro,mascotas)
     {
         this.nombre = nombre;
         this.apellido = apellido;
+        this.libro = libro;
+        this.mascotas = mascotas;  
       
     };
 
-      static Mascotas = ["Paul"]
-
-      static Libros = [{
-          nombre: "pichon",
-          autor: "pishon",
-        }]
-
-     
+    
 
     getFullName () {
         console.log (`hola mi nombre es ${this.nombre} ${this.apellido}`)
     }
 
- static addMascotas =  Usuario.Mascotas.push("Bernardo")
-
- static countMascotas () {console.log (Usuario.addMascotas) }
-
- static addBook = Usuario.Libros.push({
-     nombre: "pushi",
-     autor: "pollo"
-    })
- 
- static getbook () {
+     addMascotas (Bernardo) { 
+      
+         this.mascotas.push(nuevaMascota);
+         console.log (this.mascotas);
+         }
      
- }
+     addCount (){
 
+     }
+
+     addBook (){
+
+     }
+     getBook (){
+         
+     }
+
+ 
 }
 
-const persona1 = new Usuario ("Nahuel","Valenzuela",) 
+const persona1 = new Usuario ("Nahuel","Valenzuela",[{nombre:"sjsdsada",autor:"dsadas"}],["Paul"]) 
 
 
 console.log(persona1);
 persona1.getFullName();
 
+console.log(this.Mascotas);
 
-console.log(Usuario.Mascotas)
+
+
+/*
+
+
+
+
 Usuario.countMascotas()
 
 console.log (Usuario.Libros)
 
-
+*/
 // 

@@ -36,7 +36,7 @@ class Usuario  {
 
      }
 
-     getBook (titulos){
+     getBook (){
          
         this.libro.map(function(titulos){
             console.log(titulos.nombre)

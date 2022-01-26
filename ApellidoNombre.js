@@ -15,21 +15,37 @@ class Usuario  {
         console.log (`hola mi nombre es ${this.nombre} ${this.apellido}`)
     }
 
-     addMascotas (Bernardo) { 
+     addMascotas (nuevaMascota) { 
       
          this.mascotas.push(nuevaMascota);
          console.log (this.mascotas);
          }
      
      addCount (){
+         console.log(this.mascotas.length)
+
 
      }
 
-     addBook (){
+    addBook (libroNuevo){
+        
+         this.libro.push(libroNuevo)
+
+         console.log(this.libro)
+
 
      }
-     getBook (){
+
+     getBook (titulos){
          
+        this.libro.map(function(titulos){
+            console.log(titulos.nombre)
+            
+           
+        })
+
+       
+
      }
 
  
@@ -40,8 +56,10 @@ const persona1 = new Usuario ("Nahuel","Valenzuela",[{nombre:"sjsdsada",autor:"d
 
 console.log(persona1);
 persona1.getFullName();
-
-console.log(this.Mascotas);
+persona1.addMascotas("pepito");
+persona1.addBook({nombre: "santa", autor:"claus"})
+persona1.addCount()
+persona1.getBook()
 
 
 
